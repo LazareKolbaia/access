@@ -1,0 +1,534 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.stupidlogo {
+    width: 70px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+.stupidlogo,
+h1 {
+    margin-left: 10px;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.list-items {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+}
+
+.list-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.search-btn {
+    margin-left: 15px;
+    width: 130px;
+    font-size: 19px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.search-btn:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    transition: .5s;
+}
+
+.search-input {
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    width: 300px; 
+    height: 40px;
+    padding: 10px; 
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease; 
+}
+
+.search-input::placeholder {
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo,
+    h1 {
+        margin: 0;
+    }
+
+    .navigation-bar {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .list-item {
+        margin: 0 10px;
+    }
+
+    .search-input,
+    .search-btn {
+        margin: 10px 0;
+        width: auto;
+    }
+}
+
+
+@media only screen and (max-width: 522px) {
+    .list-items{
+        width: 250px;
+    }
+
+    .search-btn{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 473px) {
+    .list-item{
+    }
+
+    .search-input{
+        margin-left: -50px;
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    .list-items{
+        margin-left: 10px;
+    }
+
+    .search-input{
+        margin-left: -65px;
+    }
+}
+
+@media only screen and (max-width: 387px) {
+   .navigation-bar{
+    float: none;
+    display: inline-block;   
+}
+
+
+
+.navigation-bar{
+    width: 100%;
+}
+
+.search-input{
+    width: 100%;
+    margin: 0;
+}
+}
+
+
+main {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    margin: 2rem;
+
+}
+
+section {
+
+    flex: 1 1 30rem;
+
+    margin-right: 2rem;
+
+}
+
+section h2 {
+
+    margin: 0 0 1rem;
+
+}
+
+section p {
+
+    margin: 0;
+
+}
+
+form {
+
+    flex: 1 1 20rem;
+
+    margin-top: 2rem;
+
+}
+
+form input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    width: 40%;
+    height: 35px;
+}
+
+
+
+.home{
+  margin: 50px;
+}
+
+.home h2{
+    font-size: 50px;
+    width: 600px ;
+}
+
+.home p{
+    font-size: 17px;
+    width: 400px;
+}
+
+.browse{
+width: 100px;
+ height: 40px;
+background-color: transparent;
+border: 2px solid black;
+color: black;
+}
+
+button{
+    cursor: pointer; 
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /**AAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+}
+
+.search{
+    background-color: black;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+.search:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black ;
+    transition: .5s;
+}
+
+.browse:hover{
+    background-color: black;
+    border: none;
+    color: #fff;
+    transition: .5s;
+
+}
+
+
+
+.popular-recipes {
+    margin: 80px ;
+  }
+  
+  .popular-recipes h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .popular-recipes p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .popular-recipes ul {
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+  }
+
+  
+  
+  .popular-recipes li {
+    width: 650px;
+    flex: 1 0 300px;
+    margin: 20px;
+    border: 2px solid #777;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .popular-recipes li:hover{
+    cursor: pointer;
+  }
+  
+  .popular-recipes li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .popular-recipes li p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .popular-recipes .details {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .popular-recipes .chef {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-width: 675px) {
+         .home{
+
+            margin-left: -10px;
+         }
+  }
+
+  @media only screen and (max-width: 561px) {
+    .home h2{
+       font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 503px) {
+    .home h2{
+       font-size: 40px;
+    }
+
+
+}
+
+@media only screen and (max-width: 457px) {
+    .home h2{
+       font-size: 35px;
+       width: 400px;
+    }
+
+}
+
+
+@media only screen and (max-width: 457px) {
+
+    .search-inputt {
+        padding: 0.5rem;
+        width: 330px;
+        height: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 413px) {
+
+  .home p{
+    font-size: 15px;
+    width: 350px;
+  }
+    
+ .search-inputt{
+    padding: 0.5rem;
+    width: 280px;
+    height: 25px;
+}
+}
+
+
+@media only screen and (max-width: 413px) {
+
+    .home h2{
+       font-size: 32px;
+       width: 400px;
+    }
+
+
+    .home p{
+      font-size: 15px;
+      width: 350px;
+    }
+      
+    .search-inputt {
+      padding: 0.5rem;
+      width: 280px;
+      height: 25px;
+  }
+  }
+
+  @media only screen and (max-width: 413px) {
+
+
+    form input[type="text"] {
+        width: 280px;
+        height: 35px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 794px) {
+
+
+    .popular-recipes li {
+         margin-left: -5px;
+      }
+  }
+  
+
+    
+  @media only screen and (max-width:768px) {
+
+
+    .popular-recipes li {
+     width: 95%;
+    }
+  }
+
+  @media only screen and (max-width:636px) {
+
+
+    .popular-recipes li {
+     width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width:486px) {
+
+
+    .popular-recipes li {
+     width: 87%;
+    }
+  }
+  
+  @media only screen and (max-width:436px) {
+
+
+    .popular-recipes li {
+     width: 84%;
+     margin-left: 10px;
+    }
+  }
+
+  @media only screen and (max-width:388px) {
+
+
+    .popular-recipes li {
+     width: 80%;
+    }
+  }
+  
+
+  .submit-recipe {
+    margin: 50px 0;
+  }
+  
+  .submit-recipe h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .submit-recipe p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .submit-recipe form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .submit-recipe .form-row {
+    margin-bottom: 20px;
+  }
+  
+  .submit-recipe label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .submit-recipe input,
+  .submit-recipe textarea {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-recipe textarea {
+    height: 100px;
+  }
+  
+  .submit-recipe button[type="submit"] {
+    padding: 10px 20px;
+
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+h2, h3{
+    color: #d54215;
+}
+
+p{
+    color: rgb(0, 122, 75);
+}
+
+
+  .submit-recipe button[type="submit"]:hover {
+    background-color: transparent;
+    transition: .5s;
+    border: 2px solid black;
+    color: black;
+  }
+  
+
+  .popular-recipessss{
+    color: #d54215;
+  }
+ 
